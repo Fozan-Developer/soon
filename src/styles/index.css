@@ -1,0 +1,41 @@
+:root {
+  --bg-color: #e6f2ff;
+  --ice-color: #b3e0ff;
+  --melt-color: #66c2ff;
+  --text-color: #0a1a2f;
+  --transition: 0.8s ease;
+}
+
+body {
+  margin: 0;
+  font-family: "Inter", system-ui, sans-serif;
+  background: var(--bg-color);
+  color: var(--text-color);
+  transition: background var(--transition);
+    scrollbar-width: thin; /* Firefox */
+  scrollbar-color: #a3e3ff rgba(255, 255, 255, 0.05); /* thumb и track */
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Chrome, Edge, Safari */
+body::-webkit-scrollbar {
+  width: 10px; /* ширина вертикального скролла */
+}
+
+body::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.05); /* фон дорожки */
+  border-radius: 10px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #a3e3ff; /* цвет ползунка */
+  border-radius: 10px;
+  border: 2px solid rgba(0, 0, 0, 0); /* немного внутреннего отступа */
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background: #d2f2ff; /* подсветка при наведении */
+}
